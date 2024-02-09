@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <form action="POST">
+    <h1>Formulário</h1>
+    <div class="dados-pessoais">
+      <div class="form-nome">
+        <label for="nome">Qual seu Nome?</label>
+        <input type="text" required>
+      </div>
+      <div class="form-email">
+        <label for="email">Qual seu Email?</label>
+        <input type="email" required>
+      </div>
+    </div>
+    <div class="form-avaliacao">
+      <label for="avaliacao">Qual sua Avalição sobre:</label>
+      <div class="avaliacao">
+        <input type="radio" name="avaliacao" id="pouco"><label>Pouco</label>
+      </div>
+      <div class="avaliacao">
+        <input type="radio" name="avaliacao" id="neutro"><label>Neutro</label>
+      </div>
+      <div class="avaliacao">
+        <input type="radio" name="avaliacao" id="gostei"><label>Gostei</label>
+      </div>
+      <div class="avaliacao">
+        <input type="radio" name="avaliacao" id="adorei"><label>Adorei</label>
+      </div>
+    </div>
+    <div class="ocupacao">
+      <label for="ocupacao">Qual sua ocupação atualmente?</label>
+      <select name="ocupacao" id="ocupacao" required>
+        <option value="naotrabalha" select>Não Trabalho</option>
+        <option value="devfrontend">Dev Front-end</option>
+        <option value="devbackend">Dev Back-end</option>
+        <option value="devfullstack">Dev Fullstack</option>
+        <option value="outros">Outros</option>
+      </select>
+    </div>
+    <div class="habilidades">
+      <label for="habilidades">Quais suas habilidades:</label>
+      <div class="box-de-habilidades">
+        <div class="habilidade">
+          <input type="checkbox" name="HTML5" id="HTML5"><label>HTML5</label>
+        </div>
+        <div class="habilidade">
+          <input type="checkbox" name="CSS3" id="CSS3"><label>CSS3</label>
+        </div>
+        <div class="habilidade">
+          <input type="checkbox" name="javascript" id="javascript"><label>JavaScript</label>
+        </div>
+        <div class="habilidade">
+          <input type="checkbox" name="bootstrap" id="bootstrap"><label>Bootstrap</label>
+        </div>
+        <div class="habilidade">
+          <input type="checkbox" name="angular" id="angular"><label>Angular</label>
+        </div>
+        <div class="habilidade">
+          <input type="checkbox" name="java" id="java"><label>Java</label>
+        </div>
+        <div class="habilidade">
+          <input type="checkbox" name="node.js" id="node.js"><label>Node.Js</label>
+        </div>
+        <div class="habilidade">
+          <input type="checkbox" name="react" id="react"><label>React</label>
+        </div>
+      </div>
+    </div>
+    <div class="botoes">
+      <button class="enviar" type="submit">Enviar</button>
+      <button class="redefinir" type="reset">Redefinir</button>
+    </div>
+  </form>
+</body>
+
+</html>
